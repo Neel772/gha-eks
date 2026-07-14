@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pyapp
-          image: nk772/pyapp:v1
+          image: nk772/gha-pyapp:v1
           ports:
             - containerPort: 8000
