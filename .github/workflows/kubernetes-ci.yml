@@ -34,7 +34,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions@noreply"
           git add k8s/pyapp-deployment.yml
-          git commit -m 'docker tag updated by Github Actions"
+          git commit -m 'docker tag updated by Github Actions'
           
         
         
