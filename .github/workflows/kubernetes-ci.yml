@@ -28,7 +28,7 @@ jobs:
           # Short commit hash
           SHORT_SHA=${GITHUB_SHA::7}
           # Update the image tag in deployment.yml
-          yq -i '.spec.template.spec.containers[0].image = "nk772/gha-pyapp:$SHORT_SHA"' ./k8s/pyapp-deployment.yml
+          yq -i '.spec.template.spec.containers[0].image = "nk772/gha-pyapp:'"$SHORT_SHA"'"' ./k8s/pyapp-deployment.yml
       - name: Commit deployment file changes
         run: |
           git config user.name "github-actions[bot]"
